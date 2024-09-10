@@ -14,9 +14,4 @@ test("should create a content", () => {
   document.body.innerHTML = '<main id="content"></main>';
   const content = document.getElementById("content");
   expect(content).not.toBeNull();
-
-  // toolsData.forEach((tool) => {
-  //   expect(content).t
-  //   expect(content).toHaveTextContent(tool.description);
-  // });
 });

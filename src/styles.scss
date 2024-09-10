@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -44,69 +44,58 @@ footer {
   padding-bottom: 85px;
 }
 
-
-
-/* Basic Card */
+// Basic Card
 .basic-card {
   width: 300px;
   position: relative;
-
-  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
-  -o-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
-}
 
-.basic-card .card-content {
-  padding: 30px;
-}
+  .card-content {
+    padding: 30px;
+  }
 
-.basic-card .card-title {
-  font-size: 25px;
-  font-family: 'Open Sans', sans-serif;
-}
+  .card-title {
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+  }
 
-.basic-card .card-text {
-  line-height: 1.6;
-}
+  .card-text {
+    line-height: 1.6;
+  }
 
-.basic-card .card-link {
-  padding: 25px;
-  width: -webkit-fill-available;
-}
+  .card-link {
+    padding: 25px;
+    width: -webkit-fill-available;
 
-.basic-card .card-link a {
-  text-decoration: none;
-  position: relative;
-  padding: 10px 0px;
-}
+    a {
+      text-decoration: none;
+      position: relative;
+      padding: 10px 0px;
 
-.basic-card .card-link a:after {
-  top: 30px;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  width: 0;
+      &:after {
+        top: 30px;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        width: 0;
+        transition: width 0.3s ease, left 0.3s ease;
+      }
 
-  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  -moz-transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  -o-transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-}
+      &:hover:after {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
 
-.basic-card .card-link a:hover:after {
-  width: 100%;
-  left: 0;
-}
+  &-light {
+    border: 1px solid #eee;
 
-.basic-card-light {
-  border: 1px solid #eee;
-}
-
-.basic-card-light .card-title,
-
-.basic-card-light .card-text {
-  color: #7b7b7b;
+    .card-title,
+    .card-text {
+      color: #7b7b7b;
+    }
+  }
 }
