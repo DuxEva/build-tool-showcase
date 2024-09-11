@@ -23,4 +23,4 @@ Webpack is used for both development and production builds. Sass is used for sty
 
 ## Live Link
 
-You can access the deployed application at [Build Tools Showcase](https://ktscates-build-tool-showcase.netlify.app/).
+Check out the live demo of the project [here](https://radiant-madeleine-9c873b.netlify.app/).
